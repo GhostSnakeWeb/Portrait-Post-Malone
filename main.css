@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	height: 100vh;
+	background: #000;
+}
+p {
+	word-break: break-all;
+	font-size: 10px;
+	line-height: 10px;
+	background: url(post-malone.png);
+	/*Свойство background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с 
+	содержимым элемента. Изображение может быть зафиксировано и оставаться неподвижным, либо перемещаться 
+	совместно с документом. 
+	В CSS3 можно указать несколько значений для ряда фоновых изображений, перечисляя значения через запятую.*/
+	background-attachment: fixed;
+	/*Определяет, как цвет фона или фоновая картинка должна выводиться под границами. 
+	Эффект заметен при прозрачных или пунктирных границах.*/
+	-o-background-clip: text;
+	-webkit-background-clip: text;
+	   background-clip: text;
+	/*Используется в сочетании с css-свойством
+    -webkit-text-fill-color: transparent, которое обеспечивает прозрачность букв текста, 
+    за счет чего фон проглядывает через него. */
+	-webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+}
